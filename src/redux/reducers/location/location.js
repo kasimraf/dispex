@@ -1,9 +1,11 @@
 import {Types} from "../../action-types/action-types";
 
 const initialState = {
-    streets: [111,222],
+    streets: [],
     houses: [],
-    houses_flat: []
+    housesFlats: [1],
+    housesDisabled: true,
+    housesFlatsDisabled: true
 };
 
 export const location = (state = initialState, action) => {
@@ -12,6 +14,30 @@ export const location = (state = initialState, action) => {
             return {
                 ...state,
                 streets: action.payload
+            }
+        }
+        case Types.GET_HOUSES: {
+            return {
+                ...state,
+                houses: action.payload
+            }
+        }
+        case Types.GET_HOUSES_FLATS: {
+            return {
+                ...state,
+                housesFlats: action.payload
+            }
+        }
+        case Types.HOUSES_SELECT_DISABLED: {
+            return {
+                ...state,
+                housesDisabled: action.payload
+            }
+        }
+        case Types.HOUSES_FLATS_SELECT_DISABLED: {
+            return {
+                ...state,
+                housesFlatsDisabled: action.payload
             }
         }
         default: {

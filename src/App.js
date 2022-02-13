@@ -1,19 +1,12 @@
 import React from 'react';
-import {connect} from "react-redux";
+import Location from "./components/location/location";
 
-const App = (props) => {
+const App = () => {
     return (
         <div>
-          App
-            {props.streets[1]}
+          <Location />
         </div>
-    );
-};
+    )
+}
 
-export default connect(
-    state => ({
-        streets: state.location.streets,
-    }),
-    dispatch => ({
-    })
-)(App);
+export default App;
