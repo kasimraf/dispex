@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.container {
+    width: 80vw;
+    border-left: 1px solid rgba(0, 0, 0, 0.41);
+    border-right: 1px solid rgba(0, 0, 0, 0.41);
+}

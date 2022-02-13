@@ -17,3 +17,9 @@ export function getHousesFlats(id) {
         method: 'GET',
     })
 }
+
+export function getTenants(id) {
+    return fetch(`${Url}/HousingStock/clients?addressId=${id}`, {
+        method: 'GET',
+    })
+}

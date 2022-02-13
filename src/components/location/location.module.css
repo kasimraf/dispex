@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: rgba(0, 0, 0, 0.83);
+}
+
+.selectsBlock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px ;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.44);
+}
